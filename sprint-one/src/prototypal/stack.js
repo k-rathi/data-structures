@@ -23,4 +23,4 @@ stackMethods.pop = function() {
   this.len--;
   delete this.storage[this.len];
   return temp;
-}
+};
