@@ -16,9 +16,9 @@ Queue.prototype.enqueue = function(value) {
 
 Queue.prototype.dequeue = function() {
   var temp = this.storage[0];
-  for (var i = 0; i < this.len - 1; i++) {
+  this.len--;
+  for (var i = 0; i < this.len; i++) {
     this.storage[i] = this.storage[i + 1];
   }
-  this.len--;
   return temp;
 };
