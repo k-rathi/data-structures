@@ -1,7 +1,10 @@
 // this line lets you access the file system. You'll learn more about it later in the course
 var _ = require('../lib/underscore/underscore.js');
+var g = require('../sprint-two/src/graph.js');
 var fs = require('fs');
-
+console.log(require.main);
+var graph = new g.Graph();
+graph.addNode();
 // read the `adjacency-list` file in this directory (you might have named the file differently) and split it on new lines into an array
 var fileLines = fs.readFileSync('./adjacencyList.txt').toString().split('\n');
 
