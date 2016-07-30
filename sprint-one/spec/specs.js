@@ -6,7 +6,8 @@ define([
   '../lib/mocha/mocha.js',
   'src/' + variant + '/stack.js',
   'src/' + variant + '/queue.js',
-  '../lib/jquery/jquery.js'
+  '../lib/jquery/jquery.js',
+  'src/profiler.js'
 ], function(verifyClass, chai) {
 
   $(function() {
